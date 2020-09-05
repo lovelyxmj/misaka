@@ -12,8 +12,7 @@
 未经允许对`master`分支的 Pull Requests 会被 Close  
 
 ## 0x03：想要使用接口数据？  
-数据库账号：  yubanweb@13.70.40.199  
-数据库链接密码：  yubanweb  
+https://api.xuemaojiao.top/misaka  
 请使用以上链接方式来访问数据  
 
 ## 0x04：想要部署到自己服务器来运行？  
