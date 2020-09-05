@@ -31,7 +31,7 @@ for i in range(1,int(MaxPages)+1):
         #umid：用户在bilibili的唯一id
         #upic：用户的头像URL
         UserData = jsondata['data']['result'][i]
-        uname = UserData['uname'].replace('O','0').replace('o','0')#解决有用户使用O或者o代替0
+        uname = UserData['uname']#解决有用户使用O或者o代替0
         ulevel = UserData['level']
         usign = UserData['usign'].replace('"','')
         umid = UserData['mid']
@@ -39,7 +39,7 @@ for i in range(1,int(MaxPages)+1):
         
         #提取用户名中的数字以获得御坂妹ID 比如这样的“御坂妹10042号”→10042
         try:
-            yubanid = re.findall("\d+",uname)[0]
+            yubanid = re.findall("\d+",uname.replace('O','0').replace('o','0').replace('-',''))[0]
         except IndexError:
             print(f'用户{uname}未连接御坂网络')
             continue
