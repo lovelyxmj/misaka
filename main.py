@@ -59,7 +59,6 @@ def GetData(search):
             AddSQL(uname,ulevel,usign,umid,upic,yubanid)#加入数据库
 
 
-
 search_list = ['御坂','御坂妹']
 for i in range(len(search_list)):
     GetData(parse.quote(search_list[i]))
