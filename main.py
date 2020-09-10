@@ -3,6 +3,7 @@ import requests
 import json
 import re
 from urllib import parse
+import update
 #导入库
 
 
